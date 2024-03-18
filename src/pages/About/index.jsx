@@ -1,0 +1,6 @@
+
+function About() {
+  return <h1>Dommage</h1>
+}
+
+export default About;
