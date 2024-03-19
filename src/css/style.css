@@ -1,9 +1,33 @@
 .footer-container {
-  position: absolute;
+  position: static;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 209px;
   background-color: black;
   bottom: 0px;
+}
+.footer-container img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.footer-container p {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 24px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  gap: 20px;
 }
 
 .header {
@@ -77,6 +101,25 @@ body {
 
 body {
   font-family: "Montserrat";
+}
+
+.list-of-flats {
+  display: flex;
+  flex-direction: row;
+  width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.displayFlats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.oneflat {
+  width: 340px;
+  height: 340px;
 }
 
 /*# sourceMappingURL=style.css.map */

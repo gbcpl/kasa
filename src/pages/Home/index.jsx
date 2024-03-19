@@ -1,8 +1,13 @@
 import Banner from "../../components/Banner";
+import Flats from "../../components/Flats";
 
 function Home() {
   return (
-    <Banner />
+    <div>
+      <Banner />
+      <Flats />
+    </div>
+
   )
 }
 

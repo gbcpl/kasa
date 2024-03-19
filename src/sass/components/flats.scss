@@ -1,0 +1,19 @@
+.list-of-flats {
+  display: flex;
+  flex-direction: row;
+  width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.displayFlats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.oneflat {
+  width: 340px;
+  height: 340px;
+}

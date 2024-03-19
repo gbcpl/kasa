@@ -1,6 +1,9 @@
+import Banner from "../../components/Banner";
 
 function About() {
-  return <h1>Dommage</h1>
+  return (
+    <Banner />
+  )
 }
 
 export default About;
