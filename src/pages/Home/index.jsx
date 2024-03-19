@@ -1,11 +1,11 @@
 import Banner from "../../components/Banner";
-import Flats from "../../components/Flats";
+import Cards from "../../components/Card";
 
 function Home() {
   return (
     <div>
       <Banner />
-      <Flats />
+      <Cards />
     </div>
 
   )
