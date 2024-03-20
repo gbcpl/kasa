@@ -149,4 +149,63 @@ body {
   background-color: black;
 }
 
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 38px;
+  margin-bottom: 38px;
+}
+
+.button-collapse {
+  display: flex;
+  width: 1023px;
+  height: 52px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #FF6060;
+  border: none;
+  border-radius: 5px;
+  text-align: start;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paragraphCollapse {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1023px;
+}
+
+.rotatearrow2 {
+  animation: arrowback 1s forwards;
+}
+
+@keyframes arrowback {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-0.5turn);
+  }
+}
+.rotatearrow {
+  animation: arrowup 1s forwards;
+}
+
+@keyframes arrowup {
+  0% {
+    transform: rotate(-0.5turn);
+  }
+  100% {
+    transform: rotate(0turn);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
