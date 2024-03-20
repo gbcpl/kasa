@@ -29,7 +29,13 @@
   display: flex;
   margin-right: auto;
   margin-left: auto;
-  width: 1023px;
+  width: 50%;
+  animation: paragraph 0.5s forwards;
+}
+
+@keyframes paragraph {
+  0% {transform: translateY(-40px);};
+  100% {transform: translateY(0)};
 }
 
 .rotatearrow2 {
@@ -49,7 +55,3 @@
   0% {transform: rotate(-0.5turn)};
   100% {transform: rotate(0turn)};  
 } 
-
-.norotation{
-
-}

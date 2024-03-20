@@ -7,30 +7,41 @@ function Collapse() {
 
   function openCollapse(index) {
     const updatedStates = [...openStates];
-    updatedStates[index] = !updatedStates[index];
-    setOpenStates(updatedStates);
+    updatedStates[index] = !updatedStates[index]; // remplace le false de l'index par un true et inversement 
+    setOpenStates(updatedStates); // applique le nouvel état dans setOpenStates
+  }
+
+  function arrowsTransform(index) {
+    return (
+      <img
+        className={openStates[index] ? "rotatearrow2" : "rotatearrow"}        
+        src={arrow_up}
+        alt="arrow-back"
+        onClick={() => openCollapse(index)}
+      />
+    );
   }
 
   return (
     <div className="button-container">
         <button className="button-collapse" >
-          <p>Fiabilité</p>
-          {openStates[0] ? <img className={openStates[0] ? "rotatearrow2" : ""} src={arrow_up} alt="arrow-back" onClick={() => openCollapse(0)}></img> : <img className={!openStates[0] ? "rotatearrow" : ""} src={arrow_up} alt="arrow-back" onClick={() => openCollapse(0)}></img>}
+            <p>Fiabilité</p>
+            {arrowsTransform(0)}        
         </button>
-        {openStates[0] && (<p className="paragraphCollapse">Something</p>)}
+        {openStates[0] && (<p className="paragraphCollapse">Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes</p>)}
         <button className="button-collapse">
           <p>Respect</p>
-          {openStates[1] ? <img className={openStates[1] ? "rotatearrow2" : ""} src={arrow_up} alt="arrow-back" onClick={() => openCollapse(1)}></img> : <img className={!openStates[1] ? "rotatearrow" : ""} src={arrow_up} alt="arrow-back" onClick={() => openCollapse(1)}></img>}
+          {arrowsTransform(1)}          
         </button>
           {openStates[1] && (<p className="paragraphCollapse">Something</p>)}
         <button className="button-collapse">
           <p>Service</p>
-          {openStates[2] ? <img className={openStates[2] ? "rotatearrow2" : ""} src={arrow_up} alt="arrow-back" onClick={() => openCollapse(2)}></img> : <img className={!openStates[2] ? "rotatearrow" : ""} src={arrow_up} alt="arrow-back" onClick={() => openCollapse(2)}></img>}
+            {arrowsTransform(2)}          
         </button> 
           {openStates[2] && (<p className="paragraphCollapse">Something</p>)}
         <button className="button-collapse">
           <p>Sécurité</p>
-          {openStates[3] ? <img className={openStates[3] ? "rotatearrow2" : ""} src={arrow_up} alt="arrow-back" onClick={() => openCollapse(3)}></img> : <img className={!openStates[3] ? "rotatearrow" : ""} src={arrow_up} alt="arrow-back" onClick={() => openCollapse(3)}></img>}
+          {arrowsTransform(3)}          
         </button>
           {openStates[3] && (<p className="paragraphCollapse">Something</p>)}
     </div>

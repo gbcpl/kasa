@@ -180,9 +180,18 @@ body {
   display: flex;
   margin-right: auto;
   margin-left: auto;
-  width: 1023px;
+  width: 50%;
+  animation: paragraph 0.5s forwards;
 }
 
+@keyframes paragraph {
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .rotatearrow2 {
   animation: arrowback 1s forwards;
 }
@@ -206,6 +215,30 @@ body {
   100% {
     transform: rotate(0turn);
   }
+}
+.error {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  margin-right: 0;
+  align-items: center;
+}
+.error h1 {
+  font-size: 288px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: #FF6060;
+}
+.error .home {
+  font-size: 18px;
+  color: black;
+}
+.error p {
+  font-size: 38px;
+  color: #FF6060;
+}
+.error a {
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */

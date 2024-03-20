@@ -21,7 +21,13 @@ function Links() {
         <Link to="/about"><p style={{textDecoration: "underline"}}>A propos</p></Link>
       </div>
     ) 
-  }
+  } else {
+    return (
+    <div className="textdecoration">
+      <Link to="/"><p>Accueil</p></Link> 
+      <Link to="/about"><p>A propos</p></Link>
+    </div>
+  )}
 }
 
 function Header() {
