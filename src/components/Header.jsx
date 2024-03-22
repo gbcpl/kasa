@@ -1,34 +1,6 @@
-import { Link } from "react-router-dom"
 import image from '../img/logo.png'
-import { useLocation  } from "react-router-dom";
-
-
-function Links() {
-  const location = useLocation();
-
-  if (location.pathname === '/') {        
-    return (
-    <div className="textdecoration">
-      <Link to="/"><p style={{textDecoration: "underline"}}>Accueil</p></Link> 
-      <Link to="/about"><p style={{textDecoration: "none"}}>A propos</p></Link>
-    </div>
-    ) 
-
-  } else if (location.pathname === '/about') {
-    return (
-      <div className="textdecoration">
-        <Link to="/"><p style={{textDecoration: "none"}}>Accueil</p></Link> 
-        <Link to="/about"><p style={{textDecoration: "underline"}}>A propos</p></Link>
-      </div>
-    ) 
-  } else {
-    return (
-    <div className="textdecoration">
-      <Link to="/"><p>Accueil</p></Link> 
-      <Link to="/about"><p>A propos</p></Link>
-    </div>
-  )}
-}
+import Links from './Links'
+// utiliser navlink + faire classe active
 
 function Header() {
 

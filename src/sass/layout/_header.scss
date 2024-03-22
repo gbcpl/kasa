@@ -16,18 +16,17 @@
   justify-content: space-between;
 }
 
-.links {    
-  display: flex;
-  gap: 57px;
-  color: black;
-  a {
-    color: black;
-    text-decoration: none;  
-  }
-}
 .textdecoration {
   display: flex;
   flex-direction: row;
   gap: 57px;
+  color: black;
+}
 
+a {
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline;
 }

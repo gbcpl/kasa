@@ -1,0 +1,26 @@
+.displayFlats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+}
+.cover {
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.oneflat {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  width: 140px;
+  color: white;
+  align-self: center;
+  background-color: black;
+}

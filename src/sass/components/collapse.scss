@@ -38,6 +38,14 @@
   100% {transform: translateY(0)};
 }
 
+.arrow {
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
 .rotatearrow2 {
   animation: arrowback 1s forwards;
 }
@@ -52,6 +60,8 @@
 }
 
 @keyframes arrowup {
-  0% {transform: rotate(-0.5turn)};
+  0% {transform: rotate(0.5turn)};
   100% {transform: rotate(0turn)};  
 } 
+
+//
