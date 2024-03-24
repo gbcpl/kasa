@@ -23,6 +23,12 @@
   color: black;
 }
 
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
 a {
   text-decoration: none;
 }

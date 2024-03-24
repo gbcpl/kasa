@@ -1,0 +1,30 @@
+.caroussel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.caroussel-container {
+  position: relative;
+  display: inline-block; 
+}
+
+.caroussel-img {
+  height: 415px;
+  width: 1240px;
+  object-fit: cover;
+}
+
+.previous {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}

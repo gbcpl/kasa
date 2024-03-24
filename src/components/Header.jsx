@@ -1,6 +1,5 @@
 import image from '../img/logo.png'
 import Links from './Links'
-// utiliser navlink + faire classe active
 
 function Header() {
 
@@ -9,7 +8,8 @@ function Header() {
       <div className="header-layout">
         <img src={image} alt="logo"/>
         <div className="links">
-          <Links />
+          <Links to="/" className={({ isActive }) => isActive ? "active" : ""} title="Accueil"/>
+          <Links to="/about" className={({ isActive }) => isActive ? "active" : ""} title="A propos"/>
         </div>    
       </div>
     </nav>

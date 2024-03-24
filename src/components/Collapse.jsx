@@ -1,14 +1,12 @@
 import { useState } from "react";
 import arrow_up from '../img/arrow_up.png';
 
-function Collapse({ className, title, description}) {
+function Collapse({ className, title, description, nameOfClass}) {
   
   const [openStates, setOpenStates] = useState(false);
 
   function openCollapse() {
-    let updatedStates = openStates;
-    updatedStates = !updatedStates; // remplace le false de l'index par un true et inversement 
-    setOpenStates(updatedStates); // applique le nouvel état dans setOpenStates
+    setOpenStates(!openStates);
   }
 
   return (
@@ -17,7 +15,7 @@ function Collapse({ className, title, description}) {
         <p>{title}</p>
         <img className={`arrow ${openStates ? "open" : ""}`}  src={arrow_up} alt="arrow-back" onClick={openCollapse} />      
       </button>
-      {openStates && <p className="paragraphCollapse">{description}</p>}
+      {openStates && <p className={nameOfClass}>{description}</p>}
     </div>
   )
 }

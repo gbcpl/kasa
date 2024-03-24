@@ -1,12 +1,9 @@
 import { NavLink } from "react-router-dom"
 
-function Links() {
+function Links({to, className, title}) {
   return (
-  <div className="textdecoration">
-    <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>Accueil</NavLink>
-    <NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""}>A propos</NavLink>
-  </div>
-)
+    <NavLink to={to} className={className} activeClassName="active">{title}</NavLink>
+  )
 }
 
 export default Links
