@@ -4,8 +4,8 @@ import source1 from '../../img/source1.png'
 
 function Home() {
   return (
-    <div>
-      <Banner img={source1} title="Chez vous, partout et ailleurs"/>
+    <div className="cards-container">
+      <Banner img={source1} title="Chez vous, partout et ailleurs" className="backgroundimg"/>
       <Cards />
     </div>
 

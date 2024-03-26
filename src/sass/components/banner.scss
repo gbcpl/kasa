@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
     h1 {
       position: absolute;
       align-self: center;
@@ -25,6 +24,8 @@
   width: 1240px;
   height: 223px;
   margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
   img {
     filter: brightness(40%);
     width: 100%;
@@ -34,3 +35,5 @@
     object-fit: cover;
   }
 } 
+
+

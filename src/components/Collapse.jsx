@@ -11,13 +11,23 @@ function Collapse({ className, title, description, nameOfClass}) {
 
   return (
     <div className="button-container">
-      <button className={`${className}`}>
+      <button className={className} onClick={openCollapse}>
         <p>{title}</p>
-        <img className={`arrow ${openStates ? "open" : ""}`}  src={arrow_up} alt="arrow-back" onClick={openCollapse} />      
+        <img className={`arrow ${openStates ? "open" : ""}`} src={arrow_up} alt="arrow-back" />      
       </button>
-      {openStates && <p className={nameOfClass}>{description}</p>}
+      {openStates && (
+        <div className={nameOfClass}>
+          <div>
+            {Array.isArray(description) ? (
+              description.map(element => <p>{element}</p>)
+            ) : (
+              <p>{description}</p>
+            )}
+          </div>
+        </div>
+      )}
     </div>
-  )
+  );
 }
 
 export default Collapse

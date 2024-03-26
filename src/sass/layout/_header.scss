@@ -5,6 +5,12 @@
   padding-top: 45px;
   padding-left: 60px;
   padding-right: 60px;
+  @media screen and (max-width: 1024px) {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
 }
 
 .header-layout {
@@ -35,4 +41,15 @@ a {
 
 .active {
   text-decoration: underline;
+}
+
+.backgroundimg {
+  background-image: url("../img/logo.png");
+  width: 211px;
+  height: 68px;
+  @media screen and (max-width: 1024px) {
+    background-image: url("../img/minilogo.png");
+    width: 145px;
+    height: 47px;
+  }
 }

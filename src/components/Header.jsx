@@ -6,7 +6,7 @@ function Header() {
   return (
     <nav className="header">
       <div className="header-layout">
-        <img src={image} alt="logo"/>
+        <div className="backgroundimg"></div>
         <div className="links">
           <Links to="/" className={({ isActive }) => isActive ? "active" : ""} title="Accueil"/>
           <Links to="/about" className={({ isActive }) => isActive ? "active" : ""} title="A propos"/>

@@ -4,23 +4,59 @@
   width: 1240px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (max-width: 1024px) {
+    width: 90vw;
+  }
 }
 
 .logement-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 1240px;
+  @media screen and (max-width: 1024px) {
+    width: 90vw;
+  }
 }
 
 .logement-description {
   display: flex;
   flex-direction: column;
   width: 582px;
+  h1 {
+    color: #FF6060;
+    font-size: 36px;
+    margin-bottom: 0px;
+    @media screen and (max-width: 1024px) {
+      font-size: 18px;
+    }
+  }
+  h2 {
+    color: black;
+    font-size: 18px;
+    @media screen and (max-width: 1024px) {
+      font-size: 14px;
+    }
+  }
 }
 
 .logement-host {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  p {
+    color:#FF6060;
+    font-size: 18px;
+    @media screen and (max-width: 1024px) {
+      font-size: 12px;
+    }
+  }
+  img {
+    border-radius: 50%;
+  }
 }
 
 .tags-and-stars {
@@ -36,6 +72,10 @@
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    width: 90vw;
+  }
 }
 
 .more-collapse {
@@ -49,7 +89,12 @@
   border-radius: 10px;
   align-items: center;
   p {
-    width: 582px;
+    padding-left: 10px;
+    color: white;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 1024px) {
+    width: 90vw;
   }
 }
 
@@ -61,5 +106,5 @@
 }
 
 .equipements {
-  display: inline-block;
+  
 }

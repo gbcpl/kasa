@@ -4,8 +4,6 @@
   width: 100%;
   height: 209px;
   background-color: black;
-  bottom: 0px;
-  left: 0px;
 }
 .footer-container img {
   display: flex;
@@ -19,9 +17,13 @@
   color: white;
   font-size: 24px;
 }
+@media screen and (max-width: 1024px) {
+  .footer-container p {
+    font-size: 12px;
+  }
+}
 
 .footer-content {
-  display: relative;
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -37,6 +39,14 @@
   padding-top: 45px;
   padding-left: 60px;
   padding-right: 60px;
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
 }
 
 .header-layout {
@@ -69,6 +79,19 @@ a {
   text-decoration: underline;
 }
 
+.backgroundimg {
+  background-image: url("../img/logo.png");
+  width: 211px;
+  height: 68px;
+}
+@media screen and (max-width: 1024px) {
+  .backgroundimg {
+    background-image: url("../img/minilogo.png");
+    width: 145px;
+    height: 47px;
+  }
+}
+
 .banner-container {
   position: relative;
   display: flex;
@@ -95,6 +118,8 @@ a {
   width: 1240px;
   height: 223px;
   margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .banner img {
   filter: brightness(40%);
@@ -109,6 +134,21 @@ body {
   margin: 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .main-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 body {
   font-family: "Montserrat";
 }
@@ -116,7 +156,7 @@ body {
 .list-of-flats {
   display: flex;
   flex-direction: row;
-  width: 1240px;
+  max-width: 1240px;
   margin-left: auto;
   margin-right: auto;
   flex-wrap: wrap;
@@ -152,6 +192,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 1024px) {
+  .button-collapse {
+    width: 90vw;
+  }
+}
 
 .paragraphCollapse {
   display: flex;
@@ -159,6 +204,11 @@ body {
   margin-left: auto;
   width: 50%;
   animation: paragraph 0.5s forwards;
+}
+@media screen and (max-width: 1024px) {
+  .paragraphCollapse {
+    width: 80%;
+  }
 }
 
 @keyframes paragraph {
@@ -207,23 +257,27 @@ body {
   margin-left: 0;
   margin-right: 0;
   align-items: center;
+  gap: 139px;
 }
 .error h1 {
   font-size: 288px;
-  margin-top: 100px;
-  margin-bottom: 100px;
   color: #FF6060;
+  margin: 0px;
+  margin-top: 139px;
 }
 .error .home {
   font-size: 18px;
   color: black;
+  margin: 0px;
 }
 .error p {
   font-size: 38px;
   color: #FF6060;
+  margin: 0px;
 }
 .error a {
   font-size: 18px;
+  margin-bottom: 139px;
 }
 
 .displayFlats {
@@ -231,6 +285,13 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .displayFlats {
+    flex-direction: column;
+    width: 75%;
+    justify-content: center;
+  }
 }
 
 .cover {
@@ -252,6 +313,7 @@ body {
   color: white;
   align-self: center;
   background-color: black;
+  z-index: 3;
 }
 
 .caroussel {
@@ -270,19 +332,28 @@ body {
 .caroussel-img {
   height: 415px;
   width: 1240px;
+  border-radius: 25px;
   object-fit: cover;
+}
+@media screen and (max-width: 1024px) {
+  .caroussel-img {
+    width: 90vw;
+    height: auto;
+  }
 }
 
 .previous {
   position: absolute;
   top: 50%;
   left: 0;
+  cursor: pointer;
 }
 
 .next {
   position: absolute;
   top: 50%;
   right: 0;
+  cursor: pointer;
 }
 
 .logement {
@@ -292,11 +363,24 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 1024px) {
+  .logement {
+    width: 90vw;
+  }
+}
 
 .logement-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 1240px;
+}
+@media screen and (max-width: 1024px) {
+  .logement-container {
+    width: 90vw;
+  }
 }
 
 .logement-description {
@@ -304,10 +388,43 @@ body {
   flex-direction: column;
   width: 582px;
 }
+.logement-description h1 {
+  color: #FF6060;
+  font-size: 36px;
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 1024px) {
+  .logement-description h1 {
+    font-size: 18px;
+  }
+}
+.logement-description h2 {
+  color: black;
+  font-size: 18px;
+}
+@media screen and (max-width: 1024px) {
+  .logement-description h2 {
+    font-size: 14px;
+  }
+}
 
 .logement-host {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.logement-host p {
+  color: #FF6060;
+  font-size: 18px;
+}
+@media screen and (max-width: 1024px) {
+  .logement-host p {
+    font-size: 12px;
+  }
+}
+.logement-host img {
+  border-radius: 50%;
 }
 
 .tags-and-stars {
@@ -324,6 +441,12 @@ body {
   margin-right: auto;
   justify-content: space-between;
 }
+@media screen and (max-width: 1024px) {
+  .logement-collapse {
+    flex-direction: column;
+    width: 90vw;
+  }
+}
 
 .more-collapse {
   display: flex;
@@ -337,7 +460,14 @@ body {
   align-items: center;
 }
 .more-collapse p {
-  width: 582px;
+  padding-left: 10px;
+  color: white;
+  font-size: 18px;
+}
+@media screen and (max-width: 1024px) {
+  .more-collapse {
+    width: 90vw;
+  }
 }
 
 .description {
@@ -347,13 +477,29 @@ body {
   padding-right: 10px;
 }
 
-.equipements {
-  display: inline-block;
+.tags {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+}
+.tags p {
+  width: 115px;
+  height: 25px;
+  background-color: #FF6060;
+  border-radius: 10px;
+  color: white;
+  padding-top: 2px;
 }
 
 .tags {
   display: flex;
   flex-direction: row;
+}
+
+.colored-star {
+  color: #FF6060;
 }
 
 /*# sourceMappingURL=style.css.map */

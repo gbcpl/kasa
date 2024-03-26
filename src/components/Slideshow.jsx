@@ -22,11 +22,15 @@ function Slideshow() {
   }
   return (
     <div className="caroussel">
+      {pictures.length > 1 ?
       <div className="caroussel-container">
         <img className="previous" src={previousimg} alt="previous" onClick={previous}/>
         <img className="caroussel-img" src={pictures[currentIndex]} alt="caroussel"></img>
         <img className="next" src={nextimg} alt="next" onClick={next}/>
-      </div>
+      </div> : 
+      <div className="caroussel-container">
+        <img className="caroussel-img" src={pictures[currentIndex]} alt="caroussel"></img>
+      </div>}
     </div>
   )
 }
