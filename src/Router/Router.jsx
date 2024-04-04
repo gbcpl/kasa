@@ -10,7 +10,7 @@ import Footer from '../components/Footer'
 function Router() {
   return (
   <BrowserRouter>
-    <div className="main-cnotainer">
+    <div className="main-container">
       <Header />    
       <Routes>
         <Route path="/" element={<Home />} />

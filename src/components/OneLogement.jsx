@@ -12,27 +12,31 @@ function OneLogement({ id }) {
     return <Navigate to="/erreur" />  
   }
 
+  const pictures = idLogement.pictures;
+
   return (
-    <div className="logement">
-      <Slideshow />
-      <div className="logement-container">
-        <div className="logement-description">
-          <h1>{idLogement.title}</h1>
-          <h2>{idLogement.location}</h2>
+    <div className="info-container">
+      <Slideshow idLogement={idLogement} pictures={pictures}/>
+      <div className="logement">
+        <div className="logement-container">
+          <div className="logement-description">
+            <h1>{idLogement.title}</h1>
+            <h2>{idLogement.location}</h2>
+            <Tags idLogement={idLogement}/>
+          </div>
         </div>
-        <div className="logement-host">
-          <p>{idLogement.host.name}</p>
-          <img src={idLogement.host.picture } alt={idLogement.title} />
+        <div className="host-and-stars">
+          <div className="logement-host">
+            <p>{idLogement.host.name}</p>
+            <img src={idLogement.host.picture } alt={idLogement.title} />
+          </div>
+          <Stars idLogement={idLogement}/>
         </div>
-      </div>
-      <div className="tags-and-stars">
-        <Tags />
-        <Stars />
       </div>
       <div className="logement-collapse">
         <Collapse title="Description" className="more-collapse" description = {idLogement.description} nameOfClass="description"/>
-        <Collapse title="Équipements" className="more-collapse" description = {idLogement.equipments} nameOfClass="equipements"/>
-      </div>
+        <Collapse title="Équipements" className="more-collapse" description = {idLogement.equipments} nameOfClass="description"/>
+       </div>
     </div>
   );
 }

@@ -1,11 +1,6 @@
-import flats from '../datas/logements.json';
-import { useParams } from 'react-router-dom';
 
+function Tags( { idLogement } ) {
 
-function Tags() {
-  const { id } = useParams()
-
-  const idLogement = flats.find(flat => flat.id === id);
   const listOfTags = idLogement.tags;
 
   return (

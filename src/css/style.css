@@ -5,6 +5,11 @@
   height: 209px;
   background-color: black;
 }
+@media screen and (max-width: 1024px) {
+  .footer-container {
+    margin-top: 100px;
+  }
+}
 .footer-container img {
   display: flex;
   margin-left: auto;
@@ -39,6 +44,7 @@
   padding-top: 45px;
   padding-left: 60px;
   padding-right: 60px;
+  margin-bottom: 38px;
 }
 @media screen and (max-width: 1024px) {
   .header {
@@ -46,6 +52,9 @@
     padding-right: 10px;
     font-size: 12px;
     text-transform: uppercase;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -56,6 +65,11 @@
   width: 1240px;
   height: 68px;
   justify-content: space-between;
+}
+@media screen and (max-width: 1024px) {
+  .header-layout {
+    width: 90vw;
+  }
 }
 
 .textdecoration {
@@ -117,9 +131,6 @@ a {
   display: flex;
   width: 1240px;
   height: 223px;
-  margin-top: 50px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 .banner img {
   filter: brightness(40%);
@@ -128,17 +139,12 @@ a {
   border-radius: 25px;
   border-color: black;
   object-fit: cover;
+  margin-right: 19px;
+  margin-left: 19px;
 }
 
 body {
-  margin: 0;
-}
-
-@media screen and (max-width: 1024px) {
-  .main-container {
-    display: flex;
-    justify-content: center;
-  }
+  margin: 0px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -172,6 +178,13 @@ body {
   gap: 30px;
   margin-top: 38px;
   margin-bottom: 38px;
+  background-color: #F6F6F6;
+}
+@media screen and (max-width: 1024px) {
+  .button-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .button-collapse {
@@ -202,7 +215,7 @@ body {
   display: flex;
   margin-right: auto;
   margin-left: auto;
-  width: 50%;
+  width: 80%;
   animation: paragraph 0.5s forwards;
 }
 @media screen and (max-width: 1024px) {
@@ -279,6 +292,23 @@ body {
   font-size: 18px;
   margin-bottom: 139px;
 }
+@media screen and (max-width: 1024px) {
+  .error {
+    justify-content: center;
+    gap: 113px;
+  }
+  .error h1 {
+    font-size: 96px;
+  }
+  .error p {
+    text-align: center;
+    font-size: 18px;
+    margin: 0px;
+  }
+  .error .home {
+    font-size: 14px;
+  }
+}
 
 .displayFlats {
   display: flex;
@@ -303,8 +333,7 @@ body {
 
 .oneflat {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  bottom: 0px;
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
@@ -312,8 +341,13 @@ body {
   width: 140px;
   color: white;
   align-self: center;
-  background-color: black;
+  background-color: #FF6060;
   z-index: 3;
+}
+@media screen and (max-width: 1024px) {
+  .oneflat {
+    left: 0px;
+  }
 }
 
 .caroussel {
@@ -322,6 +356,11 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .caroussel {
+    margin-top: 27px;
+  }
 }
 
 .caroussel-container {
@@ -347,6 +386,13 @@ body {
   top: 50%;
   left: 0;
   cursor: pointer;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 1024px) {
+  .previous {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .next {
@@ -354,17 +400,37 @@ body {
   top: 50%;
   right: 0;
   cursor: pointer;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 1024px) {
+  .next {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.numbers {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  color: white;
+}
+
+.info-container {
+  margin-bottom: 10px;
 }
 
 .logement {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 1240px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #F6F6F6;
 }
 @media screen and (max-width: 1024px) {
   .logement {
+    flex-direction: column;
     width: 90vw;
   }
 }
@@ -426,11 +492,36 @@ body {
 .logement-host img {
   border-radius: 50%;
 }
+@media screen and (max-width: 1024px) {
+  .logement-host img {
+    width: 32px;
+    height: 32px;
+  }
+}
 
-.tags-and-stars {
+.host-and-stars {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+  .host-and-stars {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.stars {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+}
+@media screen and (max-width: 1024px) {
+  .stars {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .logement-collapse {
@@ -440,6 +531,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
+  background-color: #F6F6F6;
 }
 @media screen and (max-width: 1024px) {
   .logement-collapse {
@@ -472,25 +564,39 @@ body {
 
 .description {
   display: flex;
+  margin-right: auto;
+  margin-left: auto;
   width: 582px;
-  padding-left: 10px;
-  padding-right: 10px;
+  animation: paragraph 0.5s forwards;
+}
+@media screen and (max-width: 1024px) {
+  .description {
+    width: 80vw;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .tags {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  text-align: center;
   align-items: center;
 }
 .tags p {
-  width: 115px;
-  height: 25px;
+  width: auto;
   background-color: #FF6060;
   border-radius: 10px;
   color: white;
-  padding-top: 2px;
+  padding: 5px 10px 5px 10px;
+}
+@media screen and (max-width: 1024px) {
+  .tags {
+    width: auto;
+  }
+  .tags p {
+    font-size: 10px;
+  }
 }
 
 .tags {
@@ -500,6 +606,18 @@ body {
 
 .colored-star {
   color: #FF6060;
+}
+
+.about-container {
+  max-width: 1240px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #F6F6F6;
+}
+@media screen and (max-width: 1024px) {
+  .about-container {
+    width: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -18,8 +18,7 @@
 
 .oneflat {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  bottom: 0px;
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
@@ -27,6 +26,9 @@
   width: 140px;
   color: white;
   align-self: center;
-  background-color: black;
+  background-color: #FF6060;
   z-index: 3;
+  @media screen and (max-width: 1024px) {
+    left: 0px;
+  } 
 }

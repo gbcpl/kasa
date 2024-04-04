@@ -4,6 +4,11 @@
   gap: 30px;
   margin-top: 38px;
   margin-bottom: 38px;
+  background-color: #F6F6F6;
+  @media screen and (max-width: 1024px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .button-collapse {
@@ -32,7 +37,7 @@
   display: flex;
   margin-right: auto;
   margin-left: auto;
-  width: 50%;
+  width: 80%;
   animation: paragraph 0.5s forwards;
   @media screen and (max-width: 1024px) {
     width: 80%;

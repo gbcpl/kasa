@@ -1,4 +1,3 @@
-import image from '../img/logo.png'
 import Links from './Links'
 
 function Header() {
