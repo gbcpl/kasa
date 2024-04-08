@@ -9,6 +9,7 @@
     justify-content: center;
   } 
 }
+
 .cover {
   width: 340px;
   height: 340px;
@@ -16,19 +17,29 @@
   border-radius: 10px;
 }
 
+.gradient {
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(10, 10, 10, 0) 42%, rgb(0, 0, 0, 0.3));  width: 340px;
+  height: 340px;
+  z-index: 1;
+  border-radius: 10px;
+}
+
 .oneflat {
   position: absolute;
   bottom: 0px;
+  width: 340px;
+  height: 50px;
   padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 10px;
-  width: 140px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   color: white;
   align-self: center;
-  background-color: #FF6060;
-  z-index: 3;
+  text-align: center;
+  background-color: #FF6060; // à virer, au dessus de l'image, un dégradé par dessus, voir maquette => > faire pareil sur la page d'accueil
   @media screen and (max-width: 1024px) {
     left: 0px;
   } 
 }
+

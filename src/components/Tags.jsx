@@ -1,12 +1,11 @@
 
-function Tags( { idLogement } ) {
+function Tags( { tags } ) {
 
-  const listOfTags = idLogement.tags;
 
   return (
     <div className="tags">
-      {listOfTags.map(tag => (
-        <p>
+      {tags.map((tag, index) => (
+        <p key={index}>
           {tag}
         </p>
       )

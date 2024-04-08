@@ -5,11 +5,6 @@
   height: 209px;
   background-color: black;
 }
-@media screen and (max-width: 1024px) {
-  .footer-container {
-    margin-top: 100px;
-  }
-}
 .footer-container img {
   display: flex;
   margin-left: auto;
@@ -44,7 +39,7 @@
   padding-top: 45px;
   padding-left: 60px;
   padding-right: 60px;
-  margin-bottom: 38px;
+  margin-bottom: 100px;
 }
 @media screen and (max-width: 1024px) {
   .header {
@@ -55,6 +50,7 @@
     padding-top: 10px;
     padding-left: 0px;
     padding-right: 0px;
+    margin-bottom: 27px;
   }
 }
 
@@ -143,8 +139,23 @@ a {
   margin-left: 19px;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0px;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.main-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 1024px) {
@@ -331,18 +342,28 @@ body {
   border-radius: 10px;
 }
 
+.gradient {
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(10, 10, 10, 0) 42%, rgba(0, 0, 0, 0.3));
+  width: 340px;
+  height: 340px;
+  z-index: 1;
+  border-radius: 10px;
+}
+
 .oneflat {
   position: absolute;
   bottom: 0px;
+  width: 340px;
+  height: 50px;
   padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 10px;
-  width: 140px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   color: white;
   align-self: center;
+  text-align: center;
   background-color: #FF6060;
-  z-index: 3;
 }
 @media screen and (max-width: 1024px) {
   .oneflat {
@@ -426,7 +447,6 @@ body {
   width: 1240px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #F6F6F6;
 }
 @media screen and (max-width: 1024px) {
   .logement {
@@ -490,6 +510,8 @@ body {
   }
 }
 .logement-host img {
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
 }
 @media screen and (max-width: 1024px) {
@@ -610,13 +632,15 @@ body {
 
 .about-container {
   max-width: 1240px;
-  margin-right: auto;
   margin-left: auto;
-  background-color: #F6F6F6;
+  margin-right: auto;
+  flex: 1;
 }
 @media screen and (max-width: 1024px) {
   .about-container {
     width: auto;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 

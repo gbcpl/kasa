@@ -1,7 +1,7 @@
 import { useState } from "react";
 import arrow_up from '../img/arrow_up.png';
 
-function Collapse({ className, title, description, nameOfClass}) {
+function Collapse({ className, title, description, nameOfClass, logementData}) {
   
   const [openStates, setOpenStates] = useState(false);
 
@@ -19,9 +19,9 @@ function Collapse({ className, title, description, nameOfClass}) {
         <div className={nameOfClass}>
           <div>
             {Array.isArray(description) ? (
-              description.map(element => <p>{element}</p>)
+              description.map((element, index) => <p key={index}>{element}</p>)
             ) : (
-              <p>{description}</p>
+              <p key={0}>{description}</p>
             )}
           </div>
         </div>

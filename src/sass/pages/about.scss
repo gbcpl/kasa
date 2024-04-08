@@ -1,9 +1,11 @@
 .about-container {
   max-width: 1240px;
-  margin-right: auto;
   margin-left: auto;
-  background-color: #F6F6F6;
+  margin-right: auto;
+  flex: 1;
   @media screen and (max-width: 1024px) {
     width: auto;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
