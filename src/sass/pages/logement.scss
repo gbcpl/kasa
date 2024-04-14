@@ -98,7 +98,6 @@
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
-  background-color: #F6F6F6;
   @media screen and (max-width: 1024px) {
     flex-direction: column;
     width: 90vw;
@@ -133,6 +132,7 @@
   animation: paragraph 0.5s forwards;
   @media screen and (max-width: 1024px) {
     width: 80vw;
+    margin: 0px;
     padding-left: 10px;
     padding-right: 10px;
   }

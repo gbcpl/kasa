@@ -187,14 +187,20 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 1023px;
   margin-top: 38px;
   margin-bottom: 38px;
+  margin-right: auto;
+  margin-left: auto;
   background-color: #F6F6F6;
 }
 @media screen and (max-width: 1024px) {
   .button-container {
+    width: 100vw;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -398,7 +404,7 @@ body {
 @media screen and (max-width: 1024px) {
   .caroussel-img {
     width: 90vw;
-    height: auto;
+    height: 70vw;
   }
 }
 
@@ -553,7 +559,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
-  background-color: #F6F6F6;
 }
 @media screen and (max-width: 1024px) {
   .logement-collapse {
@@ -594,6 +599,7 @@ body {
 @media screen and (max-width: 1024px) {
   .description {
     width: 80vw;
+    margin: 0px;
     padding-left: 10px;
     padding-right: 10px;
   }

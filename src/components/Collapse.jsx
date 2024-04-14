@@ -1,7 +1,7 @@
 import { useState } from "react";
 import arrow_up from '../img/arrow_up.png';
 
-function Collapse({ className, title, description, nameOfClass, logementData}) {
+function Collapse({ className, title, description, nameOfClass }) {
   
   const [openStates, setOpenStates] = useState(false);
 
