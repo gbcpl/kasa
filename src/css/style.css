@@ -130,13 +130,13 @@ a {
 }
 .banner img {
   filter: brightness(40%);
-  width: 100%;
+  width: 65vw;
   border: 1px solid;
   border-radius: 25px;
   border-color: black;
   object-fit: cover;
-  margin-right: 19px;
-  margin-left: 19px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 html {
@@ -187,7 +187,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 1023px;
   margin-top: 38px;
   margin-bottom: 38px;
   margin-right: auto;
@@ -196,7 +195,7 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .button-container {
-    width: 100vw;
+    width: 90vw;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: auto;
@@ -206,8 +205,8 @@ body {
 
 .button-collapse {
   display: flex;
-  width: 1023px;
   height: 52px;
+  width: 55vw;
   margin-right: auto;
   margin-left: auto;
   background-color: #FF6060;
@@ -232,7 +231,7 @@ body {
   display: flex;
   margin-right: auto;
   margin-left: auto;
-  width: 80%;
+  width: 55vw;
   animation: paragraph 0.5s forwards;
 }
 @media screen and (max-width: 1024px) {
@@ -396,8 +395,8 @@ body {
 }
 
 .caroussel-img {
+  width: 65vw;
   height: 415px;
-  width: 1240px;
   border-radius: 25px;
   object-fit: cover;
 }
@@ -442,6 +441,11 @@ body {
   bottom: 10px;
   color: white;
 }
+@media screen and (max-width: 1024px) {
+  .numbers {
+    display: none;
+  }
+}
 
 .info-container {
   margin-bottom: 10px;
@@ -450,7 +454,7 @@ body {
 .logement {
   display: flex;
   flex-direction: row;
-  width: 1240px;
+  width: 65vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -555,7 +559,7 @@ body {
 .logement-collapse {
   display: flex;
   flex-direction: row;
-  width: 1240px;
+  width: 65vw;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
@@ -571,7 +575,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 582px;
+  width: 30vw;
   height: 52px;
   background-color: #FF6060;
   border: none;

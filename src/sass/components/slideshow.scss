@@ -16,8 +16,8 @@
 }
 
 .caroussel-img {
+  width: 65vw;
   height: 415px;
-  width: 1240px;
   border-radius: 25px;
   object-fit: cover;
   @media screen and (max-width: 1024px) {
@@ -56,4 +56,7 @@
   left: 50%;
   bottom: 10px;
   color: white;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 }

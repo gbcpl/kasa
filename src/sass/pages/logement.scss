@@ -5,7 +5,7 @@
 .logement {
   display: flex;
   flex-direction: row;
-  width: 1240px;
+  width: 65vw;
   margin-left: auto;
   margin-right: auto;
   @media screen and (max-width: 1024px) {
@@ -94,7 +94,7 @@
 .logement-collapse {
   display: flex;
   flex-direction: row;
-  width: 1240px;
+  width: 65vw;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
@@ -108,7 +108,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 582px;
+  width: 30vw;
   height: 52px;
   background-color: #FF6060;
   border: none;

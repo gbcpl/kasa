@@ -1,6 +1,5 @@
 import footerlogo from '../img/footerlogo.png'
 
-
 function Footer() {
   const logofooter = footerlogo;
   return (
