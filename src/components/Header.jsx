@@ -8,7 +8,7 @@ function Header() {
         <div className="backgroundimg"></div>
         <div className="links">
           <Links to="/kasa" className={({ isActive }) => isActive ? "active" : ""} title="Accueil"/>
-          <Links to="/about" className={({ isActive }) => isActive ? "active" : ""} title="A propos"/>
+          <Links to="/kasa/about" className={({ isActive }) => isActive ? "active" : ""} title="A propos"/>
         </div>    
       </div>
     </nav>

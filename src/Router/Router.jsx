@@ -14,9 +14,9 @@ function Router() {
       <Header />    
       <Routes>
         <Route path="/kasa" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/*" element={<Error />} />
-        <Route path="/logement/:id" element={<Logement />}/>
+        <Route path="/kasa/about" element={<About />} />
+        <Route path="/kasa/*" element={<Error />} />
+        <Route path="/kasa/logement/:id" element={<Logement />}/>
       </Routes>
       <Footer />
     </div>  
